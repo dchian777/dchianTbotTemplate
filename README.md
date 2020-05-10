@@ -52,11 +52,15 @@ With the Telegram Bot Token sent by the BotFather
 > This contains the core functions that are referenced frequently
 
 Replace:
+> Under setWebHook() 
+
 > line 8: ""; 
 
 With the Web App URL(Publish > Deploy as Web App... > Current Web App URL..)
 
 > line 8: "https://script.google.com....../exec";
+
+There is a function setFunctions() where you can update the functions that are displayed on the telegram interface. Of course you could use unlisted functions if you wanted to...
 
 ### --- CallbackQueries.js ---
 > This processes the callback queries

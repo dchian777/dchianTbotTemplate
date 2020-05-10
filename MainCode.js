@@ -7,7 +7,6 @@ contentType is defaulted to 'application/json', if attachments need to be sent t
 // -- Bot and Telegram Details --
 var botToken = "";
 var responseUrl = "https://api.telegram.org/bot" + botToken + "/";
-var adminChatId = "";
 
 //The payload template! Please fill in the necessary chat_id and text! The sendPayload function resets this after every run!
 //More information on the telegram bot api reference

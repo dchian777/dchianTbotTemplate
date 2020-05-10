@@ -65,3 +65,18 @@ function timeText() {
   return timeText;
 }
 
+//Sets the functions that are visible on the front page!
+function setFunctions() {
+  var commands = [
+    { command: "command1", description: "description1" },
+    { command: "command2", description: "description2" },
+  ];
+  messagePayload.commands = commands;
+
+  console.log(
+    JSON.stringify(
+      sendPayload("setMyCommands", messagePayload).getContentText()
+    )
+  );
+}
+
