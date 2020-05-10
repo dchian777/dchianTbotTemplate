@@ -24,7 +24,8 @@ Create an OAuthConsent Screen and under "Authorized Domains" use api.telegram.or
 ### --- on Google Drive ---
 
 Create a Google Script
-*Within the Script you can rename Code.gs to MainCode.gs for consistency
+
+> Within the Script you can rename Code.gs to MainCode.gs for consistency
 
 Within the App Script interface create CallbackQueries and CoreFunctions...
 File > New > Script File
@@ -41,14 +42,21 @@ Note: every time you update the code, you need to publish a "new" version of the
 > This receives the telegram messages/data in the form of the doPost() function
 
 Replace:
-line 8: var botToken = ""; with the Telegram Bot Token sent by the BotFather
+> line 8: var botToken = ""; 
+
+With the Telegram Bot Token sent by the BotFather
+
+> line 8: var botToken = "somenumbers:somelettersandnumbers";
 
 ### --- CoreFunctions.js ---
 > This contains the core functions that are referenced frequently
 
 Replace:
+> line 8: ""; 
 
-line 8: ""; with the Web App URL(Publish > Deploy as Web App... > Current Web App URL
+With the Web App URL(Publish > Deploy as Web App... > Current Web App URL..)
+
+> line 8: "https://script.google.com....../exec";
 
 ### --- CallbackQueries.js ---
 > This processes the callback queries
