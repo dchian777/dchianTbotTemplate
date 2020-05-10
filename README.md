@@ -3,7 +3,9 @@ Template for my Telegram Bots which runs on Google Cloud
 
 There are 3 Main files in this template
 > MainCode.js
+
 > CoreFunctions.js
+
 > CallbackQueries.js
 
 ## === Initial Set-up ===
@@ -16,6 +18,7 @@ eg: somenumbers:somelettersandnumbers
 ### --- on Google Cloud Console ---
 
 Create a Google Cloud Project
+
 Create an OAuthConsent Screen and under "Authorized Domains" use api.telegram.org
 
 ### --- on Google Drive ---
@@ -37,14 +40,15 @@ Note: every time you update the code, you need to publish a "new" version of the
 ### --- MainCode.js ---
 > This receives the telegram messages/data in the form of the doPost() function
 
-**Replace:
-line 8: var botToken = ___ with the Telegram Bot Token sent by the BotFather
+Replace:
+line 8: var botToken = ""; with the Telegram Bot Token sent by the BotFather
 
 ### --- CoreFunctions.js ---
 > This contains the core functions that are referenced frequently
 
-**Replace:
-line 8: "" with the Web App URL(Publish > Deploy as Web App... > Current Web App URL
+Replace:
+
+line 8: ""; with the Web App URL(Publish > Deploy as Web App... > Current Web App URL
 
 ### --- CallbackQueries.js ---
 > This processes the callback queries
