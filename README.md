@@ -1,5 +1,5 @@
 # dchianTbotTemplate
-Template for my Telegram Bots which runs on Google Cloud 
+Template for my Telegram Bots which runs on Google Cloud (using the Chrome V8 Runtime Environment)
 
 There are 3 Main files in this template
 > MainCode.js
