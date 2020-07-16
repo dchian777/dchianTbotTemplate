@@ -59,7 +59,7 @@ function doPost(e) {
 
     //If request is a callback query
     if (update.callback_query !== undefined) {
-      messagePayload.chat_id = update.callback_query.from.id;
+      messagePayload.chat_id = update.callback_query.message.chat.id;
       messagePayload.action = "typing";
       sendPayload("sendChatAction", messagePayload);
 
@@ -67,7 +67,7 @@ function doPost(e) {
       var callback_reply = callbackReply(callback.key, callback.data);
 
       if (messagePayload.document !== undefined) {
-        messagePayload.chat_id = update.callback_query.from.id;
+        messagePayload.chat_id = update.callback_query.message.chat.id;
 
         sendPayload("sendDocument", messagePayload);
       }
@@ -78,7 +78,7 @@ function doPost(e) {
       sendPayload("answerCallbackQuery", messagePayload);
 
       //Updates the message that the callback_query was called from
-      messagePayload.chat_id = update.callback_query.from.id;
+      messagePayload.chat_id = update.callback_query.message.chat.id;
       messagePayload.message_id = update.callback_query.message.message_id;
       messagePayload.text = callback_reply;
       sendPayload("editMessageText", messagePayload);
